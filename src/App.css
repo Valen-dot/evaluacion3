@@ -1,0 +1,44 @@
+/*Fondo gereral de la pagina*/
+
+.app-container {
+  background-color: #666;
+  min-height: 100vh;
+  padding: 20px;
+  color: #141313; /*color blanco para el texto */
+  font-family: 'Reenie Beanie', cursive;
+}
+
+.postit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  grid-template-rows: repeat(2, auto); /* 2 filas */
+  gap: 16px;
+  padding: 20px;
+  overflow-y: auto; /* agrega un scroll si hay más de 8 post-its */
+  max-height: 500px;  /* Altura máxima opcional */
+}
+
+.postit {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 45% 100%;
+  padding: 15px;
+  border-radius: 1%;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  font-family: 'Reenie Beanie', cursive;
+  background-color: #4d1e1e;
+  font-size: 1.0rem;        /* Tamaño de fuente más grande y legible
+                            por eso utilicé el rem en vez de px */
+}
+
+.delete-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: #111;
+  color: rgb(82, 17, 17);
+  border: none;
+  cursor: pointer;
+  color:#111
+}
